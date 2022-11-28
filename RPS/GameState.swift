@@ -1,15 +1,12 @@
 import Foundation
 
 enum GameState {
-    case start
-    case win
-    case lose
-    case draw
+    case start, win, lose, draw
     
     var status: String {
         switch self {
         case .start:
-            return "Rock, Paper, Scissors?"
+            return "Rock, Paper, Scissors,\n Lizard, Spock?"
         case .win:
             return "You Won!"
         case .lose:
